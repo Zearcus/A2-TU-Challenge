@@ -76,26 +76,26 @@ namespace TU_Challenge
             Assert.That(result, Is.EqualTo(expected));
         }
 
-        //[Test]
-        //[TestCase(2, true)]
-        //[TestCase(3, true)]
-        //[TestCase(4, false)]
-        //[TestCase(5, true)]
-        //[TestCase(6, false)]
-        //[TestCase(7, true)]
-        //[TestCase(8, false)]
-        //[TestCase(9, false)]
-        //[TestCase(10, false)]
-        //[TestCase(11, true)]
-        //[TestCase(12, false)]
-        //[TestCase(13, true)]
-        //[TestCase(22091, true)]
-        //[TestCase(22092, false)]
-        //public void IsPremier(int a, bool expected)
-        //{
-        //    bool result = MyMathImplementation.IsPrimary(a);
-        //    Assert.That(result, Is.EqualTo(expected));
-        //}
+        [Test]
+        [TestCase(2, true)]
+        [TestCase(3, true)]
+        [TestCase(4, false)]
+        [TestCase(5, true)]
+        [TestCase(6, false)]
+        [TestCase(7, true)]
+        [TestCase(8, false)]
+        [TestCase(9, false)]
+        [TestCase(10, false)]
+        [TestCase(11, true)]
+        [TestCase(12, false)]
+        [TestCase(13, true)]
+        [TestCase(22091, true)]
+        [TestCase(22092, false)]
+        public void IsPremier(int a, bool expected)
+        {
+            bool result = MyMathImplementation.IsPrimary(a);
+            Assert.That(result, Is.EqualTo(expected));
+        }
 
         //[Test]
         //[TestCase(2, 1)]
@@ -135,18 +135,18 @@ namespace TU_Challenge
         }
 
 
-        //[Test]
-        //[TestCase(0, 1, 1)]
-        //[TestCase(0, 10, 1)]
-        //[TestCase(20, 10, -1)]
-        //[TestCase(-20, 10, 1)]
-        //[TestCase(10, 0, -1)]
-        //[TestCase(20, 20, 0)]
-        //public void IsInOrder(int a, int b, int expected)
-        //{
-        //    var result = MyMathImplementation.IsInOrder(a, b);
-        //    Assert.That(result, Is.EqualTo(expected));
-        //}
+        [Test]
+        [TestCase(0, 1, 1)]
+        [TestCase(0, 10, 1)]
+        [TestCase(20, 10, -1)]
+        [TestCase(-20, 10, 1)]
+        [TestCase(10, 0, -1)]
+        [TestCase(20, 20, 0)]
+        public void IsInOrder(int a, int b, int expected)
+        {
+            var result = MyMathImplementation.IsInOrder(a, b);
+            Assert.That(result, Is.EqualTo(expected));
+        }
 
         //[Test]
         //public void TestIsInOrder()

@@ -13,19 +13,9 @@ namespace TU_Challenge
             return a + b;
         }
 
-        public static bool IsDivisible(int a, int b)
-        {
-            return ((a +b % 1) == 0);
-        }
-
-        public static bool IsEven(int a)
-        {
-            return ((a % 2) == 0);
-        }
-
         public static bool IsMajeur(int age)
         {
-            if(age < 18)
+            if (age < 18)
             {
                 return false;
             }
@@ -33,7 +23,44 @@ namespace TU_Challenge
             {
                 return true;
             }
-           
+
+        }
+
+        public static bool IsEven(int a)
+        {
+            return ((a % 2) == 0);
+        }
+
+        public static bool IsDivisible(int a, int b)
+        {
+            return a % b  == 0;
+        }
+
+        public static bool IsPrimary(int a)
+        {
+            if (a % 2 == 0 && a != 2)
+            {
+                return false;
+            }
+            else if (a % 3 == 0 && a != 3)
+            {
+                return false;
+            }
+            else if (a % 5 == 0 && a != 5)
+            {
+                return false;
+            }
+            else if (a % 7 == 0 && a != 7)
+            {
+                return false;
+            }
+            else return true;
+        }
+
+
+        public static int Power2(int a)
+        {
+            return a * a;
         }
 
         public static int Power(int a, int b)
@@ -48,9 +75,16 @@ namespace TU_Challenge
             return expected;
         }
 
-        public static int Power2(int a)
+        public static int IsInOrder(int a, int b)
         {
-            return a * a;
+            if( a < b)
+            {
+                return 1;
+            }
+            else
+            {
+                return a == b ? 0 : -1;
+            }
         }
     }
 }
