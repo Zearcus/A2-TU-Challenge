@@ -20,7 +20,7 @@ namespace TU_Challenge
 
         public static bool IsEven(int a)
         {
-            return ((a % 1) == 0);
+            return ((a % 2) == 0);
         }
 
         public static bool IsMajeur(int age)
@@ -33,6 +33,24 @@ namespace TU_Challenge
             {
                 return true;
             }
+           
+        }
+
+        public static int Power(int a, int b)
+        {
+            int expected = a;
+
+            for (int i = 1; i < b; i++)
+            {
+                expected = expected * a;
+            }
+
+            return expected;
+        }
+
+        public static int Power2(int a)
+        {
+            return a * a;
         }
     }
 }

@@ -112,27 +112,27 @@ namespace TU_Challenge
         //    }
         //}
 
-        //[Test]
-        //[TestCase(2, 4)]
-        //[TestCase(8, 64)]
-        //[TestCase(10, 100)]
-        //[TestCase(15, 225)]
-        //public void Power2(int a, int expected)
-        //{
-        //    int result = MyMathImplementation.Power2(a);
-        //    Assert.That(result, Is.EqualTo(expected));
-        //}
+        [Test]
+        [TestCase(2, 4)]
+        [TestCase(8, 64)]
+        [TestCase(10, 100)]
+        [TestCase(15, 225)]
+        public void Power2(int a, int expected)
+        {
+            int result = MyMathImplementation.Power2(a);
+            Assert.That(result, Is.EqualTo(expected));
+        }
 
-        //[Test]
-        //[TestCase(2, 2, 4)]
-        //[TestCase(20, 3, 8000)]
-        //[TestCase(12, 4, 20736)]
-        //[TestCase(3, 8, 6561)]
-        //public void Power(int a, int b, int expected)
-        //{
-        //    int result = MyMathImplementation.Power(a, b);
-        //    Assert.That(result, Is.EqualTo(expected));
-        //}
+        [Test]
+        [TestCase(2, 2, 4)]
+        [TestCase(20, 3, 8000)]
+        [TestCase(12, 4, 20736)]
+        [TestCase(3, 8, 6561)]
+        public void Power(int a, int b, int expected)
+        {
+            int result = MyMathImplementation.Power(a, b);
+            Assert.That(result, Is.EqualTo(expected));
+        }
 
 
         //[Test]
